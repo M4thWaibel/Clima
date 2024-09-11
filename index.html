@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="src/style/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="src/script/script.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <section class="temperature-now"> 
+            <div class="location">
+                <img src="src/image/location.png" alt="Location icon">
+                <input type="text" placeholder="Insira a cidade" id="city-input">
+                <!--Nome da cidade que vai pesquisa a temperatura-->
+                <button id="search"> <img src="src/image/lupa.png" alt="search icon"> </button>
+            </div>
+            <div class="city">
+                <h2 id="city"></h2> &ThickSpace;  <!--Nome da cidade-->
+                <img src="" id="country-flag">
+            </div>
+            <div class="temperature">
+                <div class="number">
+                    <p id="temperature"><span></span>&deg;C</p>    <!--Temperatura atual-->
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="stats">
+                    <img src="src/image/wind.png" alt="wind icon">
+                    <div class="info">
+                        <p>Vento</p>
+                        <p id="wind"><span></span></p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <img src="src/image/humidity.png" alt="humidity icon">
+                    <div class="info">
+                        <p>Umidade</p>
+                        <p id="humidity"><span></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

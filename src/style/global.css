@@ -1,0 +1,149 @@
+:root{
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+main{
+    background: url(../image/sky2.jpg) center/cover;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
+}
+
+input{
+    background: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0.2rem;
+    color: #605e80;
+    font-size: 1.4rem;
+}
+
+input::placeholder{
+    text-align: center;
+    opacity: 70%;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    background: transparent;
+    border: none;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.temperature-now{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));;
+    width: 48rem;
+    width: 48rem;
+    border-radius: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+.temperature-now img{
+    width: 2.4rem;
+}
+
+.location{
+    justify-self: center;
+    padding: 3.2rem 3.2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.city{
+    margin-top: 2.2rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+.temperature{
+    margin: 4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.temperature .number{
+    text-align: center;
+    font-weight: 700;
+    font-size: 8.8rem;
+    color: #130f52;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.temperature .number .max-min{
+    font-size: 2rem;
+}
+
+.temperature .number .max-min span{
+    color: #8381af;
+}
+
+.celcius{
+    font-size: 2.4rem;
+    color: #605e80;
+    margin-top: 1.5rem;
+}
+
+.statistics{
+    padding: 1.2rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.stats{
+    flex: 1;
+    padding: 1.2rem 1.6rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));;
+    border-radius: 0.6rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.stats .info{
+    color: #121035;
+}
+
+.stats h5 span,
+.stats .info p{
+    font-size: 1.2rem;
+}
+
+.stats .info h5{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+#wind, #humidity{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
